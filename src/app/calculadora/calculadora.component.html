@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Calculdora</h1>
+    <div class="form-group">
+      <label for="num1">Number 1</label>
+      <input type="number" class="form-control" id="num1"
+             required
+             [(ngModel)]="model.num1" name="num1">
+             <p>{{model.num1}}</p>
+    </div>
+
+    <div class="form-group">
+      <label for="num2">Number 2</label>
+      <input type="number" class="form-control" id="num2"
+              required
+              [(ngModel)]="model.num2" name="num2">
+              <p>{{model.num2}}</p>
+    </div>
+
+    <button type="button" class="btn" (click)="Suma()">Suma</button>
+    <button type="button" class="btn" (click)="Resta()">Resta</button>
+    <button type="button" class="btn" (click)="Mult()">Multiplicar</button>
+    <button type="button" class="btn" (click)="Div()">Dividir</button>
+
+  <h2>{{result}}</h2>
+</div>
