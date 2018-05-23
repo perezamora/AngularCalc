@@ -1,4 +1,5 @@
-import { Operacion } from './../operacion';
+import { ICalc } from './../ICalc';
+import { Calc } from './../Calc';
 import { Component, NgModule } from '@angular/core';
 
 @Component({
@@ -7,29 +8,30 @@ import { Component, NgModule } from '@angular/core';
   styleUrls: ['./calculadora.component.css']
 })
 
-export class CalculadoraComponent  {
+export class CalculadoraComponent {
 
-  public result: number;
-  model = new Operacion(0, 0);
+  resultat: number;
+  model = new Calc(0, 0);
 
   Suma() {
-    this.model = new Operacion(this.model.num1, this.model.num2);
-    this.result = this.model.suma();
+    this.model = new Calc(this.model.num1, this.model.num2);
+    this.resultat = this.model.Suma();
   }
 
   Resta() {
-    this.model = new Operacion(this.model.num1, this.model.num2);
-    this.result = this.model.resta();
+    this.model = new Calc(this.model.num1, this.model.num2);
+    this.resultat = this.model.Resta();
   }
 
   Mult() {
-    this.model = new Operacion(this.model.num1, this.model.num2);
-    this.result = this.model.mult();
+    this.model = new Calc(this.model.num1, this.model.num2);
+    this.resultat = this.model.Mult();
   }
 
   Div() {
-    this.model = new Operacion(this.model.num1, this.model.num2);
-    this.result = this.model.div();
+    this.model = new Calc(this.model.num1, this.model.num2);
+    this.resultat = this.model.Div();
   }
 
 }
+

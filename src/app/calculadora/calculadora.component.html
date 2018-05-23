@@ -1,5 +1,6 @@
 <div class="container">
   <h1>Calculdora</h1>
+  <form #calcForm="ngForm">
     <div class="form-group">
       <label for="num1">Number 1</label>
       <input type="number" class="form-control" id="num1"
@@ -20,6 +21,6 @@
     <button type="button" class="btn" (click)="Resta()">Resta</button>
     <button type="button" class="btn" (click)="Mult()">Multiplicar</button>
     <button type="button" class="btn" (click)="Div()">Dividir</button>
-
-  <h2>{{result}}</h2>
+  </form>
+  <h2>{{resultat}}</h2>
 </div>
