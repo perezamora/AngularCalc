@@ -19,7 +19,7 @@ export class CalculadoraComponent {
   }
 
   Resta() {
-    this.model = new Calc(this.model.num1, this.model.num2);
+    //this.model = new Calc(this.model.num1, this.model.num2);
     this.resultat = this.model.Resta();
   }
 
