@@ -1,6 +1,6 @@
+import { ICalc } from './ICalc';
+import { Calc } from './Calc';
 import { environment } from './../../environments/environment';
-import { ICalc } from './../ICalc';
-import { Calc } from './../Calc';
 import { Component } from '@angular/core';
 
 @Component({
